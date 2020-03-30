@@ -1,0 +1,21 @@
+states: cave twisty rapid secret dragon graveyard victory
+symbols: n s e w
+begin_rules
+cave -> twisty on e
+twisty -> cave on w
+twisty -> cave on w
+twisty -> rapid on s
+rapid -> twisty on n
+rapid -> secret on w
+rapid -> dragon on e
+secret -> rapid on e
+rapid -> dragon on e
+dragon -> victory on n
+dragon -> graveyard on e
+end_rules
+start: cave
+final: victory graveyard
+esee
+esen
+esse
+esweween
